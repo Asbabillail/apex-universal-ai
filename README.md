@@ -1,5 +1,7 @@
 # APEX — Universal AI Intelligence
 
+![APEX static and fixture checks](https://github.com/Asbabillail/apex-universal-ai/actions/workflows/apex-ci.yml/badge.svg)
+
 **APEX v3.0.0-alpha.1 — experimental development release**
 
 > The right prompt. The right model. The right tools.
@@ -18,7 +20,7 @@ APEX is an open-source collection of AI-agent skills for refining user intent, c
 - Skills cannot grant access to external accounts, create scheduled tasks or execute code by themselves.
 
 ## Getting started
-1. Explore the relevant \`SKILL.md\` under \`skills/\`.
+1. Explore the relevant `SKILL.md` under `skills/`.
 2. Use the native Agent Skills workflow supported by your AI environment, where available.
 3. Tell APEX your goal, preferred mode (Quick, Collaborative or Advanced) and access constraints.
 4. Verify model/tool access; authorize consequential actions separately.
@@ -27,8 +29,8 @@ APEX is an open-source collection of AI-agent skills for refining user intent, c
 > APEX, collaborative: Help me plan a family trip; clarify what matters before creating a concise reusable prompt.
 
 ## Free, reproducible tests
-- Structural checks: \`python -m pip install PyYAML==6.0.2 && python tests/validate_skills.py\`
-- Fixture smoke checks: \`npx --yes promptfoo@latest eval -c evals/promptfooconfig.yaml -o reports/promptfoo-echo.json\`
+- Structural checks: `python -m pip install PyYAML==6.0.2 && python tests/validate_skills.py`
+- Fixture smoke checks: `npx --yes promptfoo@latest eval -c evals/promptfooconfig.yaml -o reports/promptfoo-echo.json`
 - CI: See [GitHub Actions](../../actions).
 
 **Important:** Promptfoo Echo repeats predefined sample text. The fixture tests verify test configuration and assertions; they **do not invoke APEX or measure model quality**. Tests may depend on package availability and GitHub runner limits.
