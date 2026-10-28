@@ -1,0 +1,2 @@
+# Current model comparison policy
+Before selecting named models for a decision, check current first-party sources (OpenAI, Anthropic, Google or another requested provider), the user's actual plan and tool access when visible. Mark verified_at and evidence. Compare performance on the user's task rather than universal leaderboard slogans. Platform model menus and API IDs are not always identical. If unable to verify, recommend a capability class and say what remains unknown.
