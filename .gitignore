@@ -1,0 +1,7 @@
+node_modules/
+.promptfoo/
+reports/
+.env
+.env.*
+*.log
+__pycache__/
