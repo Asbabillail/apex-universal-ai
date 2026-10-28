@@ -1,0 +1,29 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Apex, help me clarify and then create a compact prompt.",
+      "Apex, choose the right AI model and thinking level for my task.",
+      "Apex, audit my available tools and recommend a workflow."
+    ],
+    "developerName": "As Babillail",
+    "displayName": "APEX \u2014 Prompt Intelligence",
+    "longDescription": "Hybrid AI intelligence for user intent alignment, concise cross-platform prompting, source-aware model recommendations and safe plugin/workflow selection.",
+    "shortDescription": "Prompt, model & workflow intelligence"
+  },
+  "name": "apex-prompt-intelligence",
+  "version": "3.0.0-alpha.1",
+  "description": "APEX v3 Hybrid Intelligence: concise prompting, model guidance, capability-aware tool routing, and safe workflow design.",
+  "author": {
+    "name": "As Babillail"
+  },
+  "keywords": [
+    "prompt engineering",
+    "agent skills",
+    "AI model selection",
+    "token efficiency",
+    "workflow design"
+  ],
+  "skills": "./skills"
+}
