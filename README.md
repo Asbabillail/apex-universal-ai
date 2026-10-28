@@ -53,3 +53,7 @@ See [SECURITY.md](SECURITY.md). External actions require available tools and app
 
 ## License
 [MIT License](LICENSE). APEX is a community project; it is not officially certified or endorsed by OpenAI, Google, Anthropic, Promptfoo or GitHub.
+
+## Synthetic 20-case benchmark
+
+[Public synthetic cases](benchmarks/cases.json) and [evaluation protocol](benchmarks/README.md) are included. Offline structural tests run in CI. Live model calls require a separately authorized API key and explicit metered API approval; no API calls occur automatically. The runnable [model runner](scripts/run_live_benchmark.py) and [scorer](scripts/score_benchmark.py) test APEX skill text without native plugin tools; see [verification records](docs/certificates/README.md).

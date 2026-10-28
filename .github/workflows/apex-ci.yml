@@ -17,6 +17,10 @@ jobs:
         run: python -m pip install 'PyYAML==6.0.2'
       - name: Validate manifests and skill contracts
         run: python tests/validate_skills.py
+      - name: Check 20-case synthetic benchmark contracts (offline)
+        run: python -m unittest discover -s tests -p 'test_benchmark*.py' -v
+      - name: Verify model runner dry run (zero API calls)
+        run: python scripts/run_live_benchmark.py --dry-run
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
