@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 938 >>
+stream
+BT
+/F1 12 Tf
+45 770 Td
+18 TL
+(APEX v3.0.0-alpha.2 - CI VERIFICATION RECORD) Tj
+T*
+(SELF-ISSUED - NOT OFFICIAL CERTIFICATION) Tj
+T*
+() Tj
+T*
+(Repository: Asbabillail/apex-universal-ai) Tj
+T*
+(Commit: 3a25062a3309287d39fd5aabde3b3a5b538d8029) Tj
+T*
+(GitHub Actions run: 40784384271) Tj
+T*
+(CI result: Success) Tj
+T*
+(Contract checks: 8 of 8 passed) Tj
+T*
+(Promptfoo Echo fixtures: 6 of 6 passed) Tj
+T*
+() Tj
+T*
+(Verification URL:) Tj
+T*
+(https://github.com/Asbabillail/apex-universal-ai/actions/runs/40784384271) Tj
+T*
+() Tj
+T*
+(Scope: static package checks and prerecorded Echo fixtures ONLY.) Tj
+T*
+(Not evidence of live model reasoning, actual tool operation,) Tj
+T*
+(token savings, cross-platform compatibility, or agent deployment.) Tj
+T*
+(The 20-case synthetic benchmark was added after this CI run.) Tj
+T*
+() Tj
+T*
+(Issued for traceability by the APEX project maintainer.) Tj
+T*
+(Not independent or third-party accreditation.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1299
+%%EOF
