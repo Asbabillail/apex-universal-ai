@@ -1,0 +1,11 @@
+{
+  "status": "not_executed",
+  "cases_prepared": 20,
+  "actual_model_calls": 0,
+  "model_usage_tokens": null,
+  "requirement_retention_live": null,
+  "reasoning_quality_human": null,
+  "tool_claim_accuracy_live": null,
+  "tool_execution_accuracy": null,
+  "reason": "No authorized text-model API credentials; no billed model call was made. Test corpus and scoring kit are provided separately."
+}
