@@ -1,0 +1,43 @@
+# No-cost prerecorded-output smoke checks. IMPORTANT: Echo does not invoke APEX or any LLM.
+description: APEX v3 Alpha - fixture-only Promptfoo smoke tests
+prompts:
+  - '{{logged_output}}'
+providers:
+  - echo
+tests:
+  - description: Portfolio constraints retained
+    vars:
+      logged_output: 'Design a responsive Next.js portfolio with free hosting and accessible navigation.'
+    assert:
+      - type: contains-all
+        value: ['Next.js', 'responsive', 'free hosting']
+  - description: AI model entitlement not invented
+    vars:
+      logged_output: 'Best available model depends on your plan; confirm current access before selecting.'
+    assert:
+      - type: contains-all
+        value: ['depends on your plan', 'confirm current access']
+  - description: Agent tool permissions clearly stated
+    vars:
+      logged_output: 'Recommend a read-only inspection first; obtain approval before publication.'
+    assert:
+      - type: contains-all
+        value: ['read-only', 'approval']
+  - description: Clarification before substantial design
+    vars:
+      logged_output: 'I understand the goal. Which deployment environment and budget should the design target?'
+    assert:
+      - type: contains-all
+        value: ['goal', 'deployment environment', 'budget']
+  - description: Explicit context preservation
+    vars:
+      logged_output: 'Handover: objective, agreed requirements, decisions, completed work, unresolved questions, next steps.'
+    assert:
+      - type: contains-all
+        value: ['objective', 'agreed requirements', 'decisions', 'next steps']
+  - description: No unverified benchmark claim
+    vars:
+      logged_output: 'Estimated efficiency depends on evaluation; no benchmark has been completed.'
+    assert:
+      - type: contains-all
+        value: ['Estimated', 'no benchmark has been completed']
