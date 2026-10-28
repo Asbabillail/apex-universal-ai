@@ -10,7 +10,7 @@ for rel in ("plugin.json", ".codex-plugin/plugin.json"):
     try:
         j=json.loads((ROOT/rel).read_text(encoding="utf-8"))
         if j.get("name")!="apex-prompt-intelligence": errors.append(f"{rel}: unexpected name")
-        if j.get("version")!="3.0.0-alpha.1": errors.append(f"{rel}: unexpected version")
+        if j.get("version")!="3.0.0-alpha.2": errors.append(f"{rel}: unexpected version")
     except Exception as ex: errors.append(f"{rel}: {ex}")
 for name in sorted(MANDATORY):
     path=ROOT/"skills"/name/"SKILL.md"
@@ -32,10 +32,12 @@ checks={"intent alignment":all(x in core for x in ["Listen", "Analyze", "Clarify
  "model availability": "verified_at" in model and "availability" in model,
  "permission boundaries":all(x in work for x in ["L0:","L1:","L2:","L3:"]),
  "workflow patterns":all(x in work for x in ["Loop", "Graph", "Code-first"]),
+ "evidence protocol": (ROOT/'skills/apex-tool-workflow-intelligence/references/evidence-protocol.md').exists() and "references/evidence-protocol.md" in work,
+ "cross-project scope": "project scope" in core and "model-picker access" in model and "different repository" in work,
  "skill count": len(list((ROOT/'skills').glob('*/SKILL.md')))==3}
 for title,ok in checks.items():
  if not ok: errors.append(f"contract: {title}")
-report={"test_kind":"static_contract_only","version":"3.0.0-alpha.1","checks":checks,"passed":len(errors)==0,"errors":errors,"does_not_verify":["real model behavior","ChatGPT plugin activation","live tool access","cross-provider correctness","token savings"]}
+report={"test_kind":"static_contract_only","version":"3.0.0-alpha.2","checks":checks,"passed":len(errors)==0,"errors":errors,"does_not_verify":["real model behavior","ChatGPT plugin activation","live tool access","cross-provider correctness","token savings"]}
 (ROOT/'reports').mkdir(exist_ok=True)
 (ROOT/'reports/static-results.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

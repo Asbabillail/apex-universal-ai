@@ -12,6 +12,9 @@ Route a user's intent to the least complex reliable tools and workflow. A skill 
 2. Detect overlapping skills; choose the minimum useful combination. Do not assume independent plugins can message each other or coordinate autonomous work without an actual orchestration runtime.
 3. Identify model/tool compatibility and material prerequisites. Do not recommend an unavailable integration as if already connected.
 
+## Evidence provenance and execution scope
+When recommending or auditing tools, classify **mentioned → discovered → exposed → connected → executed → outcome validated**; do not collapse these stages. For material claims, record the specific project or account scope and what the tool actually returned. Evidence of successful GitHub writes in one repository does not establish writes in a different repository. A provider-reported plan is not a complete billing or entitlement audit. If a statement is drawn from context, say so. Load `references/evidence-protocol.md` for detailed audit cases, but keep everyday responses concise.
+
 ## Workflow router
 - **Direct answer/prompt:** Clear bounded task requiring no external side effects.
 - **Skill-assisted:** Reusable domain-specific expertise, still no necessary side effects.

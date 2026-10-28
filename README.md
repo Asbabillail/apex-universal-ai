@@ -2,7 +2,7 @@
 
 ![APEX static and fixture checks](https://github.com/Asbabillail/apex-universal-ai/actions/workflows/apex-ci.yml/badge.svg)
 
-**APEX v3.0.0-alpha.1 — experimental development release**
+**APEX v3.0.0-alpha.2 — experimental development release**
 
 > The right prompt. The right model. The right tools.
 
@@ -36,6 +36,9 @@ APEX is an open-source collection of AI-agent skills for refining user intent, c
 **Important:** Promptfoo Echo repeats predefined sample text. The fixture tests verify test configuration and assertions; they **do not invoke APEX or measure model quality**. Tests may depend on package availability and GitHub runner limits.
 
 See [Testing Policy](docs/TESTING.md) for evidence scope, known limitations, and proposed live-model evaluations.
+
+## Evidence and pilot evaluations
+Read [the anonymized five-scenario pilot](benchmarks/2026-10-manual-pilot.md) and [benchmark policy](benchmarks/README.md). These are **manual self-reviewed findings**, not a reproducible live-model benchmark. Actual CI checks are structural and prerecorded Promptfoo Echo fixtures; they do not assess AI reasoning. The alpha.2 update adds claim/source/scope/operation/result discipline to prevent overclaiming tool availability or execution.
 
 ## Roadmap
 1. **Alpha:** Skill packaging, static checks and no-API smoke tests.

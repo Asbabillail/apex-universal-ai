@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "apex-prompt-intelligence",
-  "version": "3.0.0-alpha.1",
+  "version": "3.0.0-alpha.2",
   "description": "APEX v3 Hybrid Intelligence: concise prompting, model guidance, capability-aware tool routing, and safe workflow design.",
   "author": {
     "name": "As Babillail"
@@ -24,7 +24,7 @@
           "Apex, audit my available tools and recommend a workflow."
         ],
         "developerName": "As Babillail",
-        "displayName": "APEX \u2014 Prompt Intelligence",
+        "displayName": "APEX — Prompt Intelligence",
         "longDescription": "Hybrid AI intelligence for user intent alignment, concise cross-platform prompting, source-aware model recommendations and safe plugin/workflow selection.",
         "shortDescription": "Prompt, model & workflow intelligence"
       }

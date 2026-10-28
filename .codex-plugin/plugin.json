@@ -13,7 +13,7 @@
     "shortDescription": "Prompt, model & workflow intelligence"
   },
   "name": "apex-prompt-intelligence",
-  "version": "3.0.0-alpha.1",
+  "version": "3.0.0-alpha.2",
   "description": "APEX v3 Hybrid Intelligence: concise prompting, model guidance, capability-aware tool routing, and safe workflow design.",
   "author": {
     "name": "As Babillail"

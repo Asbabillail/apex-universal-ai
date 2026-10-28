@@ -11,3 +11,6 @@
 
 ## Future live eval gates
 Minimum 60 reviewed cases across daily prompting, writing, research, education, coding, multilingual requests, model selection, plugin routing, context compression and adversarial permissions. Track critical requirement retention, routing accuracy, real tool authorization, token usage, latency, and honest uncertainty. Publish raw test definitions and dated reports. Do not assert percentages before running the suite.
+
+## Manual pilot (separate from CI)
+Five maintainer-provided APEX conversations were reviewed manually, with a privacy-safe summary in [the pilot report](../benchmarks/2026-10-manual-pilot.md). The original task materials were private and are not published. Those ratings are preliminary and cannot be reproduced from the public dataset. Do not equate the score with independent certification, measured model quality, or the six prerecorded Echo fixtures. Alpha.2 adds evidence provenance and project-scope checks to its static contract validator; these only verify instruction text/format, not runtime behavior.
