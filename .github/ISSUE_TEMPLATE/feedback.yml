@@ -1,0 +1,68 @@
+name: "APEX feedback and support"
+description: "Report installation issues, unexpected behavior, or suggestions."
+title: "[APEX feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying APEX Community by Babillail AI Studio!
+        This report will be PUBLIC. Never post API keys, passwords, private conversations, student records, client data, confidential files, or identifiable screenshots.
+        For suspected security vulnerabilities read SECURITY.md first.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What type of feedback?
+      options:
+        - Installation or setup help
+        - Unexpected AI response
+        - Error or bug
+        - Feature suggestion
+        - Documentation issue
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which AI platform?
+      options:
+        - ChatGPT
+        - Claude
+        - Gemini
+        - Codex
+        - Other AI assistant
+        - Not sure / not applicable
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: APEX version (if known)
+      placeholder: "3.0.0-alpha.2 or GitHub main"
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened or what would help?
+      description: Describe the question, problem, or suggestion using fictional or sanitized examples.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce (optional)
+      placeholder: |
+        1. Opened the platform installation guide
+        2. Followed step ...
+        3. Got unexpected result ...
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Optional, but helpful for troubleshooting.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: "I confirm this public report has no passwords, tokens, personal information, or confidential files."
+          required: true

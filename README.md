@@ -1,5 +1,19 @@
 # APEX — Universal AI Intelligence
 
+<p align="center"><img alt="APEX Community Logo" src="assets/apex-logo.png" width="144"/></p>
+
+**Free APEX Community by Babillail AI Studio** · v3.0.0-alpha.2 (experimental)
+
+### 🧭 New here? Get started in 3 minutes!
+
+**[Download / Quickstart](QUICKSTART.md)** · **[ChatGPT](docs/installation/CHATGPT.md)** · **[Claude](docs/installation/CLAUDE.md)** · **[Gemini](docs/installation/GEMINI.md)** · **[Codex](docs/installation/CODEX.md)** · **[Other AI](docs/installation/OTHER-AI.md)**
+
+**[Copy-ready instructions for any chatbot](distributions/generic/APEX-COMMUNITY-INSTRUCTIONS.md)** · **[Compatibility matrix](docs/COMPATIBILITY.md)**
+
+**Have a problem or idea? [Submit APEX feedback](https://github.com/Asbabillail/apex-universal-ai/issues/new?template=feedback.yml)** · [Feedback guide](docs/FEEDBACK.md)
+
+> **Status:** GitHub source is public and free under MIT. The native ChatGPT plugin is still private and not yet available for public installation. AI-platform integration and quality vary by environment.
+
 ![APEX static and fixture checks](https://github.com/Asbabillail/apex-universal-ai/actions/workflows/apex-ci.yml/badge.svg)
 
 **APEX v3.0.0-alpha.2 — experimental development release**
